@@ -1,0 +1,296 @@
+/*MEDIA RULES*/
+@media (min-width:990px) {
+    
+    #about{
+        position: relative;
+        top: 200px;
+        color: white;
+    }}
+    @media (max-width:990px) {
+        
+        #about{
+            position: relative;
+            top: 100px;
+            color: white;
+        }
+        #servizi .row .col{
+            margin-bottom: 30px;
+        }
+        #web-icon{
+            margin-bottom: 30px;
+        }
+        .port-item i{
+            position: relative;
+            bottom: 100px !important;
+            left: 150px !important;
+        }
+    }
+
+nav {
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-item{
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left:0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: #a6c9c8;
+}
+
+.nav-item a:hover{
+    color: #BF665E;
+}
+
+.nav-item:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#about h2{
+    border-left: 15px solid #fadccf;
+    padding-left: 8px;
+    
+}
+#front-end{
+    font-weight: bold;
+    color: #BF665E;
+}
+
+#about p{
+    margin-right: auto;
+    width: 60%;
+    text-align: justify;
+}
+
+header{
+    height: 95vh;
+    background-image: url("../img/backg.jpg");
+}
+
+.btn-disc, 
+.btn-sub{
+    background-color: #BF665E;
+    color: white;
+}
+
+.btn-disc:hover,
+.btn-sub:hover{
+    background-color: #a6c9c8;
+}
+
+#social-btns .btn,
+#social-btns .btn::before,
+#social-btns .btn .fa-brands.btn,
+#social-btns .btn .fa-solid{
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    background-color: white;
+}
+
+#social-btns .btn::before{
+    top:90%; left: -110%;
+}
+
+#social-btns .btn .fa-brands,
+#social-btns .btn .fa-solid{
+    transform: scale(0.8);
+}
+
+#social-btns .btn:focus::before,
+#social-btns .btn:hover::before{
+    top: -10%; left: -10%;
+}
+
+#social-btns .btn:focus .fa-brands /*sostituisce il fa*/,
+#social-btns .btn:hover .fa-brands,
+#social-btns .btn:focus .fa-solid,
+#social-btns .btn:hover .fa-solid{
+    background-color: transparent;
+    color: #fff !important;
+    transform: scale(1);
+}
+
+#social-btns{
+    height: 90px;
+    margin: auto;
+    font-size: 0;
+}
+
+#social-btns .btn{
+    display: inline-block;
+    background-color: #fff;
+    width: 70px; height: 70px;
+    line-height: 60px;
+    margin: 0 10px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+    opacity: 0.99;
+}
+
+#social-btns .btn::before{
+    content: "";
+    width: 120px; height: 120px;
+    transform: rotate(45deg);
+}
+
+#social-btns .btn .fa-brands{
+    font-size: 38px;
+    vertical-align: middle;
+}
+/*SOCIAL*/
+#social-btns .fb .fa-brands{
+    color: #4267B2;
+}
+
+#social-btns .btn.fb:focus,
+#social-btns .btn.fb:hover {
+    background-color: #4267B2;
+}
+
+
+#social-btns .ig .fa-brands{
+    font-size: 50px !important;
+    margin-bottom: 5px;
+    
+   
+}
+#social-btns .btn.ig:focus,
+#social-btns .btn.ig:hover {
+    background-color: #fc306c;
+}
+
+
+#social-btns .gmail .fa-solid{
+    font-size: 35px;
+    margin-top: 10px;
+     
+}
+
+#social-btns .btn.gmail:focus,
+#social-btns .btn.gmail:hover {
+    background-color: #c71610;
+}
+
+
+#social-btns .linkedin .fa-brands{
+    font-size: 50px !important;
+    margin-bottom: 5px;
+    
+   
+}
+#social-btns .btn.linkedin:focus,
+#social-btns .btn.linkedin:hover {
+    background-color: #0e76a8;
+}
+
+.zoom-wrapper .card{
+    transition: transform 0.8s;
+    height: 100%;
+}
+
+.zoom-wrapper:hover .card{
+    transform: scale(1.1);
+}
+
+#servizi h2, #competenze h2, #portfolio h2{
+    border-left: 15px solid #fadccf;
+    padding-left: 8px;
+}
+
+#web-icon img,
+#graphic-icon img{
+    display: inline-block;
+    margin: 30px 30px;
+    cursor: pointer;
+}
+#web-icon img:hover,
+#graphic-icon img:hover{
+    transform: scale(1.5);
+}
+
+#competenze, #servizi, #portfolio{
+    padding-top: 70px;
+}
+
+#web-icon h3, #graphic-icon h3{
+    border-bottom: 5px solid #a6c9c8;
+    padding-bottom: 10px;
+    display: table;
+
+}
+
+#portfolio .card{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#portfolio .card:not(:hover) p{
+   content: none;
+}
+
+.port-item i{
+    position: relative;
+    bottom:150px;
+    left: 225px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.port-item img{
+    opacity: 0.7;
+    border: 1px solid black;
+}
+
+.port-item:hover img{
+    opacity: 1;
+    box-shadow: 10px 5px rgba(128, 128, 128,0.8);
+}
+
+
+footer{
+  background-color: #BF665E;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: #fadccf;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #a6c9c8;
+}
+
+#social-footer i{
+    font-size: 30px;
+    margin: 0px 10px;
+    color: #fadccf;
+}
+
+#social-footer i:hover{
+    color: #a6c9c8;
+}
+
+#descr{
+    color: black;
+}

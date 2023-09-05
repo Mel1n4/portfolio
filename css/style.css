@@ -10,11 +10,14 @@
         
         #about{
             position: relative;
-            top: 100px;
+            top: 60px;
             color: white;
         }
         #servizi .row .col{
             margin-bottom: 30px;
+        }
+        #servizi .row{
+            margin-left:0px !important;
         }
         #web-icon{
             margin-bottom: 30px;
@@ -26,7 +29,16 @@
         }
         #front-end{
             display:block;
-            
+        }
+        #social-btns{
+            display:flex;
+        }
+        #portfolio .row .col-md-5{
+            margin-left:20px;
+        }
+        footer {
+            text-align:center;
+        }
     }
 
 nav {

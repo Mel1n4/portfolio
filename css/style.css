@@ -24,6 +24,9 @@
             bottom: 100px !important;
             left: 150px !important;
         }
+        #text{
+            display:block;
+            margin-bottom:10px;
     }
 
 nav {

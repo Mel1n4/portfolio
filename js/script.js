@@ -29,3 +29,5 @@ function scroll() {
     scrollToTop.style.display = "none";
   }
 }
+
+scroll();

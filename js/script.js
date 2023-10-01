@@ -14,7 +14,7 @@ textLoad();
 setInterval(textLoad, 6000);
 
 document.addEventListener('DOMContentLoaded',  function ScrollToTop() {
-    window.scrollTo({
+    body.scrollTo({
       top: 0,
       behavior: "smooth"
     });

@@ -13,9 +13,18 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 6000);
 
-document.addEventListener('DOMContentLoaded',  function ScrollToTop() {
-    body.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  })
+$(document).ready(function(){
+    $("#btns-port button").click(function(){
+        $("#btns-port button").removeClass('active-cl');
+        $(this).addClass('active-cl');
+
+        //targeted 
+        let targetedItems = $(this).data('target');
+        if(targetedItems === 'all'){
+            $('.port-item').show();
+        }else{
+        $('.port-item').hide(); //hide all
+        $('.'+targetedItems).show(); //show targeted item
+        }
+    })
+})

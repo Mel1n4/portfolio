@@ -13,7 +13,7 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 6000);
 
-document.addEventListener('DOMContentLoaded', function ScrollToTop() {
+document.addEventListener('DOMContentLoaded',  function ScrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth"

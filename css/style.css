@@ -39,6 +39,9 @@
         footer {
             text-align:center;
         }
+        .nav-item::after{
+            width: 50%;
+        }
     }
 
 nav {
@@ -327,4 +330,6 @@ footer a:hover{
     cursor: pointer;
 }
   
-  
+figure{
+    display: inline-flex;
+}

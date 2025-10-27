@@ -1,0 +1,97 @@
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #f5f3ef;
+  color: #3e3a36;
+  overflow-x: hidden;
+}
+
+/* Background canvas */
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(62, 58, 54, 0.95);
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fdfdfd;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #6ca6a3;
+}
+
+/* Sections */
+.section {
+  position: relative;
+  z-index: 5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+  background: rgba(245, 243, 239, 0.9);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Links */
+.links {
+  margin-top: 1.5rem;
+}
+
+.links a {
+  margin: 0 1rem;
+  color: #3e3a36;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.links a:hover {
+  color: #6ca6a3;
+  border-color: #6ca6a3;
+}
+
+/* Hidden sections or items */
+.hidden {
+  display: none;
+}

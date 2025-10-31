@@ -12,28 +12,39 @@
 
   <nav class="navbar">
     <ul>
-      <li><a href="#home" class="active">HOME</a></li>
+      <li><a href="index.html" class="active">HOME</a></li>
       <li><a href="about.html">ABOUT</a></li>
-      <li><a href="research.html">RESEARCH</a></li>
+      <li><a href="#">RESEARCH</a></li>
       <li class="hidden"><a href="#personal">PERSONAL</a></li>
     </ul>
   </nav>
 
-  <section id="home" class="section">
-    <div class="content">
-      <h1 class="my-5">Hi, I'm Carmela De Felice, 
-        <br>but pretty much everyone knows me as Melina.</h1>
-      <p>
-        Emerging researcher with a focus on
-        <strong>Artificial Intelligence</strong>, <strong>Natural Language Processing</strong> and
-        <strong>Knowledge Representation</strong>.
-      </p>
-      <div class="links">
-        <a href="https://scholar.google.com/citations?user=e-s1Zb4AAAAJ&hl=it" target="_blank">Google Scholar</a>
-        <a href="#" target="_blank">GitHub</a>
+   <section id="research" class="section">
+  <div class="content">
+    <h2>Research Works</h2>
+    <p class="intro"></p>
+
+    <div class="research-grid">
+      <!-- Card 1 -->
+      <div class="research-card">
+        <img src="img/diagramEvoca.png" alt="Immagine del paper 1" class="research-img" />
+        <div class="research-info">
+          <h3 class="research-title">EVOCA: Explainable Verification of Claims by Graph Alignment</h3>
+          <p class="research-abstract">
+            The paper introduces EVOCA - Explainable Verification Of Claims by Graph Alignment - a hybrid approach that combines NLP (Natural Language Processing) techniques with the structural advantages of knowledge graphs to manage and reduce the amount of evidence required to evaluate statements.
+          </p>
+          <a href="https://www.mdpi.com/2078-2489/16/7/597" target="_blank" class="research-link">Read the paper →</a>
+        </div>
       </div>
+
+      <!-- Card 2 -->
+      
+
     </div>
-  </section>
+  </div>
+</section>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>

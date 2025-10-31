@@ -95,3 +95,71 @@ body, html {
 .hidden {
   display: none;
 }
+
+/* Sezione research */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.research-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Immagine */
+.research-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Info sotto l’immagine */
+.research-info {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.research-title {
+  font-size: 1.1rem;
+  color: #3e3a36;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.research-abstract {
+  font-size: 0.95rem;
+  color: #4f4c48;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.research-link {
+  display: inline-block;
+  font-weight: 600;
+  color: #6ca6a3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.research-link:hover {
+  color: #3e3a36;
+}
+
+/* Testo introduttivo */
+.intro {
+  color: #5b5753;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
